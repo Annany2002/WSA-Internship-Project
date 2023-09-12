@@ -38,7 +38,7 @@ const Header = () => {
         <div className="header">
           <div className="logo">
             <Link className="logo-link" to={'/'}>
-              <img src={Logo} className='logoImg' alt="logo"/>
+              <img src={Logo} className='logoImg' alt="logo" />
             </Link>
             {/* <div onClick={() => setIsPlaceBoxVisible(true)} className="__left">
               <span className="type">
@@ -209,8 +209,8 @@ const Header = () => {
             className={({ isActive }) =>
               isActive ? 'nav-bottom-btn active-nav' : 'nav-bottom-btn'
             }>
-            <LogoIconBW className="icon-btm" />
-            <div className="text">Swiggy</div>
+            <img src={Logo}  style={{width:'60px', height:'40px'}}/>
+            <div className="text">Order It</div>
           </NavLink>
           <NavLink
             to={'/search'}
@@ -252,9 +252,8 @@ const Header = () => {
       )}
       <div className={`signin-side-wrapper`}>
         <div
-          className={`signin-side ${
-            isSigninSideVisible ? 'visible-side' : ''
-          }`}>
+          className={`signin-side ${isSigninSideVisible ? 'visible-side' : ''
+            }`}>
           <div className="top">
             <div className="left">
               <RxCross1
